@@ -1,0 +1,14 @@
+import './button.css'
+
+
+
+const Button = (props) => {
+    const message = () => {
+        alert(`A label desse botão é ${props.label}`)
+    }
+     return <button className='btn' onClick={message}>{props.label}</button>
+ }
+
+
+export default Button
+
